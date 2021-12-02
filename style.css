@@ -6,7 +6,6 @@
     border: 0;
     font-size: 100%;
 }
-
 ol, ul {
     list-style: none;
 }
@@ -74,7 +73,6 @@ a.icon-menu {
     background-color: black;
     color: white;
     }
-
 /* End Header */
 
 /* Banner */  
@@ -91,7 +89,6 @@ a.icon-menu {
 .banner p {
     margin-top: 30px;
     
-    
     }
 .banner .register{
     width: 60%;
@@ -105,7 +102,6 @@ a.icon-menu {
     text-align: center;
     margin-top: 40px;
     }
-
 /* End Banner */
 
 /* Main */
@@ -141,7 +137,6 @@ a.icon-menu {
     margin: auto;
     margin-top: 60px;
 }
-
 .card p {
     margin-top: 23px;
     margin-left: -10px;
@@ -165,7 +160,6 @@ a.icon-menu {
     font-family: "Oswald";
     margin-top: 30px;
 }
-
 /* End Main */
 
 /* Dance */
@@ -204,7 +198,6 @@ a.icon-menu {
 .left-content {
     margin-left: 30px;
 }
-
 .content p{
     margin-top: 50px;
 }
@@ -223,7 +216,6 @@ a.icon-menu {
     font-family: "Oswald";
     text-align: center;
 }
-
 /* End Dance */
 
 /* Static */
@@ -252,7 +244,6 @@ a.icon-menu {
     text-align: center;
     margin: 0;
     }
-
 /* End Static */
 
 /* Dancer */
@@ -279,7 +270,6 @@ a.icon-menu {
 .dancer-info h2 {
     margin-top: 35px;
 }
-
 /* End Dancer */
 
 /* Subscribe */
@@ -296,7 +286,6 @@ a.icon-menu {
     color: #303030;
     padding-top: 104px;
 }
-
 .subscribe-content p {
     max-width: 825px;
     text-align: center;
@@ -322,7 +311,6 @@ a.icon-menu {
     height: 63px;
     background-color: #ffffff;
 }
-
 /* End Subscribe */
 
 /* Footer */
@@ -377,10 +365,7 @@ a.icon {
 .right p, .left p {
     line-height: 44px;
     font-family: "Montserrat";
-    
     }
-    
-
 /* End Footer */
 /* Responsive*/
 @media  (min-width:769px) and (max-width:1024px) {
@@ -491,8 +476,7 @@ a.icon {
     }
     .banner h2 {
         font-size: 30px;
-        text-align: center;
-        
+        text-align: center;   
     }
     .banner p {
         text-align: center;
@@ -503,7 +487,6 @@ a.icon {
         margin-top: 30px;
         margin: auto;
     }
-    
     /* Main */ 
     .card p { 
         font-size: 15px;
@@ -519,7 +502,6 @@ a.icon {
     .list-card {
         margin-top: 0;
         padding-bottom: 30px;
-
     }
     .list-card .card {
         width: 90%;
@@ -532,7 +514,6 @@ a.icon {
         flex-direction: column;
     }
     .dance h2 {
-
         margin-top: 50px;
         text-align: center;
     }
