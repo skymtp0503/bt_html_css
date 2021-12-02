@@ -1,101 +1,27 @@
+
+/* Commom */
 *{ 
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
-   }
+}
 
-  ol, ul {
+ol, ul {
     list-style: none;
-  }
-
-  header{
-    
-    background-image: url("image/7.png");
-    height: 794px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-     
-  }
-  .container{
-      margin: 0 5%;
-  }
-.header{
-    background-color: black;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    
-    
-  
-
 }
-
-
-ul.list-items{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.container{
+    margin: 0 5%;
 }
-ul li{
-    margin-left: 15px;
-}
-ul li a{
-    text-decoration: none;
-    text-align: center;
-    line-height: 100px;
-    margin-left: 10px;
-    text-transform: uppercase;
-    color: white;
-}
-a.icon-menu{
-    display: none;
-}
-
-.fa.fa-bars{
-    background-color: black;
-    color: white;
-    
-}
-p{
-    font-size: 30px;
+.title{
+    font-size: 60px;
     color: #ffffff;
-    font-weight: 400;
-    font-family: "Montserrat";
-
-}
-
-
-h1{
-    color: #ffffff;
-    font-weight: 400;
+    font-weight: 600;
     font-family: "Oswald";
+    text-align: center;
+    text-transform: uppercase;
 }
-
-.h1-banner{
-    font-size: 125px;
-    transform: translate(-12px, 47px);
-}
-
-.text{
-    /*position: absolute;
-    bottom: 80px;
-    max-width: 50%;
-    transform: translate(14px,4px);*/
-    display: flex;
-    flex-direction: column;
-    max-width: 50%;
-    margin-top: 200px;
-}
-
-
 p{
-   
     font-size: 30px;
     color: #ffffff;
     font-weight: 400;
@@ -103,13 +29,72 @@ p{
     word-wrap: break-word;
     word-break: break-word;
 }
-.p-banner{
-    margin-top: 30px;
-    transform: translate(-6px, 3px);
-    margin-top: 30px;
+/* End Commom */
+
+/* Header */
+header {
+    background-image: url("image/7.png");
+    height: 794px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;    
+    }
+.header {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+.bgColor{
+    background-color: black;
 }
-.register{
-    width: 322px;
+ul.list-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+ul li {
+    margin-left: 15px;
+    }
+ul li a{
+    text-decoration: none;
+    text-align: center;
+    line-height: 100px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    color: white;
+    }
+a.icon-menu {
+    display: none;
+    }
+.fa.fa-bars{
+    background-color: black;
+    color: white;
+    }
+
+/* End Header */
+
+/* Banner */  
+.banner .text {
+    
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin-top: 200px;
+    }
+.banner h2 {
+    text-align: start;
+}  
+.banner p {
+    margin-top: 30px;
+    
+    
+    }
+.banner .register{
+    width: 60%;
     height: 65px;
     border-radius: 4px;
     background-color: #e8631c;
@@ -119,31 +104,21 @@ p{
     font-family: "Oswald";
     text-align: center;
     margin-top: 40px;
-}
-.space{
-    background-color: #ffffff;
-    height: 963px;
-}
-.main{
+    }
+
+/* End Banner */
+
+/* Main */
+.main {
     background: #303030;
 }
-.main-text{
+.main .main-text{
     text-align: center;
-    padding-top: 82px;
-    padding-left: 41px;
-}
-.h1-main{
-    font-size: 75px;
-    font-weight: 700;
-    text-align: center;
-}
-.p-main{
-    font-size: 30px;
-    font-weight: 400;
+    padding-top: 80px;
+}   
+.main-text p{
     text-align: center;
     margin-top: 32px;
-    
-
 }
 .list-card{
     display: flex;
@@ -151,16 +126,8 @@ p{
     justify-content: space-between;
     margin-top: 75px;
     padding-bottom: 0;
-    
 }
-.card{
-    /*text-align: center;
-    margin-left: -14px;
-    border-radius: 8px;
-    background-color: #e8631c;
-    margin-bottom: 75px;
-    width: 30%;
-    height: 495px; */
+.list-card .card {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -169,27 +136,22 @@ p{
     border-radius: 8px;
     margin-bottom: 75px;
 }
-.card img{
+.card img {
     width: 30%;
     margin: auto;
     margin-top: 60px;
 }
 
-.card p{
+.card p {
     margin-top: 23px;
     margin-left: -10px;
     font-size: 22px;
 }
-.h1-card{
+.card h2 {
     margin-top: 45px;
     font-size: 37px;
-    color: #ffffff;
-    font-weight: 600;
-    font-family: "Oswald";
-    text-align: center;
-    text-transform: uppercase;
 }
-.price{
+.card .price{
     width: 90%;
     height: 65px;
     text-align: center;
@@ -203,40 +165,54 @@ p{
     font-family: "Oswald";
     margin-top: 30px;
 }
-.dance{
+
+/* End Main */
+
+/* Dance */
+.dance {
     background-color: #e8631c;
     display: flex;
     flex-direction: row;
 }
-.reverse{
+.dance h2 {
+    text-align: start;
+}
+.reverse {
     background-color: #e8631c;
     display: flex;
     flex-direction: row-reverse;
 }
-.image{
+.dance .image {
     width: 50%;
 }
-.reverse .image{
+.reverse .image {
     margin-top: -4px;
 }
-.reverse .box{
+.reverse .box {
     display: flex;
     flex-direction: column;
     margin-top:  40%;
     margin-left: 15%;
 }
-.image img{
+.image img {
     width: 100%;
 }
-.content{
+.dance .content{
     width: 50%;
     text-align: start;
-    
 }
-.left-content{
+.left-content {
     margin-left: 30px;
 }
-button.readmore{
+
+.content p{
+    margin-top: 50px;
+}
+.content h2{
+    margin-top: 200px;
+}
+.content button{
+    margin-top: 70px;
     width: 60%;
     height: 65px;
     border-radius: 4px;
@@ -246,72 +222,40 @@ button.readmore{
     font-weight: 400;
     font-family: "Oswald";
     text-align: center;
-    }
-.content p{
-        margin-top: 50px;
-        font-size: 25px;
-        color: #ffffff;
-        font-weight: 400;
-        font-family: "Montserrat";
 }
-.h1-dance{
-    font-size: 75px;
-    color: #ffffff;
-    font-weight: 700;
-    font-family: "Oswald";
-    margin-top: 200px;
-}
-.content button{
-        margin-top: 70px;
-}
-.static{
+
+/* End Dance */
+
+/* Static */
+.static {
     background: #303030;
     margin-top: -4px;
 }
-.sta_content{
+.sta_content {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 258px;
 }
-.sta_content h1{
-    font-size: 75px;
-    color: #ffffff;
-    font-weight: 700;
-    font-family: "Oswald";
-    text-align: center;
-}
-.sta_content p{
-    font-size: 30px;
+.sta_content p{ 
     max-width: 842px;
-    color: #ffffff;
-    font-weight: 400;
-    font-family: "Montserrat";
-    text-align: center;
     margin: auto;
     margin-top: 30px;
 }
-.number{
+.sta_content .number{
     display: flex;
     justify-content: space-around;
     margin-top: 160px;
     margin-left: 20px;
+    }
 
-}
-.number h1{
-    font-size: 67px;
-    color: #ffffff;
-    font-weight: 700;
-    font-family: "Oswald";
-    text-align: center;
-}
 .number p{
-    font-size: 42px;
-    color: #ffffff;
-    font-weight: 400;
-    font-family: "Montserrat";
     text-align: center;
     margin: 0;
-}
+    }
+
+/* End Static */
+
+/* Dancer */
 .dancer{
     background-image: url("image/9.png");
     height: 974px;
@@ -320,32 +264,26 @@ button.readmore{
     background-size: cover;
     position: relative;
     text-align: center;
-}
-.dancer-info{
+    }
+.dancer .dancer-info{
     padding-top: 335px;
     padding-top: 335px;
-}
-.p-dancer{
+    }
+.dancer-info p {
     max-width: 915px;
-    font-size: 50px;
-    color: #ffffff;
-    font-weight: 400;
     font-family: "Nunito";
     text-align: center;
     margin: auto;
     margin-top: -18px;
-
 }
-.h1-dancer{
-    font-size: 58px;
-    color: #ffffff;
-    font-weight: 700;
-    font-family: "Oswald";
-    text-align: center;
+.dancer-info h2 {
     margin-top: 35px;
-    text-transform: uppercase;
 }
-.subscribe{
+
+/* End Dancer */
+
+/* Subscribe */
+.subscribe {
     background-image: url("image/10.png");
     height: 593px;
     background-position: center;
@@ -354,34 +292,24 @@ button.readmore{
     position: relative;
     text-align: center;
 }
-.subscribe-content{
+.subscribe .subscribe-content{
     color: #303030;
     padding-top: 104px;
 }
-.h1-sub{
-    font-size: 75px;
-    color: #ffffff;
-    font-weight: 700;
-    font-family: "Oswald";
-    text-align: center;
-}
-.p-sub{
+
+.subscribe-content p {
     max-width: 825px;
-    font-size: 30px;
-    color: #ffffff;
-    font-weight: 400;
-    font-family: "Montserrat";
     text-align: center;
     margin: auto;
     margin-top: 33px;
-}
-.input-sub{
+    }
+.subscribe-content .input-sub {
     text-align: center;
     margin: auto;
     margin-top: 44px;
     margin-left: 38px;
-}
-.submit{
+    }
+.input-sub .submit {
     width: 20%;
     height: 65px;
     border-radius: 4px;
@@ -389,26 +317,38 @@ button.readmore{
     color: #ffffff; 
     margin-left: -4px;  
 }
-.input{
+.input-sub .input{
     width: 50%;
     height: 63px;
     background-color: #ffffff;
 }
-footer{
+
+/* End Subscribe */
+
+/* Footer */
+footer {
     background-color: #303030;
 }
-.footer_{
-    
+.footer_ {  
     display: flex;
     flex-direction: row;
 }
-.left, .right{
+.footer_ .left, .footer_ .right {
     margin-top: 100px;
 }
-.left{
+.footer_ .left {
     width: 50%;
 }
-.icons .fa{
+.left .icons {
+    margin-top: 30px;
+}
+.icons .icon {
+    margin-top: 15px;
+}
+a.icon {
+    line-height: 44px;
+    }
+.left .icons .fa {
     font-family: FontAwesome;
     font-size: 30px;
     width: 44px;
@@ -419,107 +359,105 @@ footer{
     border-radius: 50%;
     background-color: white;
     color: black;
-}
-
-.right{
+}   
+.footer_ .right {
     width: 50%;
     display: flex;
     flex-direction: row;
 }
-.about, .services, .other{
+.right.about, .right .services, .right .other {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
-}
-.h1-footer{
-    font-size: 33px;
-    color: #ffffff;
-    font-weight: 400;
-    font-family: "Oswald";
+    }
+.right h2,.left h2 {
+    text-align: start;
     margin-bottom: 30px;
     }
-.p-footer{
-    max-width: 958px;;
-    font-size: 25px;
-    color: #ffffff;
-    font-weight: 400;
-    font-family: "Montserrat";
-}
-p.footer{
-    font-size: 25px;
+.right p, .left p {
     line-height: 44px;
-    color: #ffffff;
-    font-weight: 400;
     font-family: "Montserrat";
     
-}
-.icons{
-    margin-top: 30px;
-}
-.icon{
-    margin-top: 15px;
-}
-a.icon{
-    line-height: 44px;
-}
-@media  (min-width:769px) and (max-width:1023px) {
-    .h1-banner {
-        font-size: 85px;
     }
-    .p-banner{
-        font-size: 25px;
+    
+
+/* End Footer */
+/* Responsive*/
+@media  (min-width:769px) and (max-width:1024px) {
+    .title {
+        font-size: 30px;
     }
-    .h1-card{
+    /* Banner*/
+    .banner h2.title {
+        font-size: 60px;
+        text-align: start;
+    }
+    .banner p{
+        font-size: 15px;
+    }
+    .card h2{
         font-size: 30px;
     }
     .card p{
         font-size: 15px;
         word-wrap: break-word;
     }
-    .price{
+    .card .price{
         height: 45px;
         font-size: 15px;
     }
-    .content{
+    /* Dance*/
+    h2.title{
         text-align: center;
-        margin: auto;
-        width: 100%
-    };
-
-    .content h1{
-        font-weight: 700;
-        font-size: 50px;
-        font-weight: 500px;
-    }
-    .h1-dance{
-        margin-top: 100px;
-    }
-    .content p{
-        margin-top: 25px;
-    }
-    .content button {
-        margin-top: 35px;
-        margin-bottom: 35px;
-    }
-    .image{
-        width: 100%;
+        margin-top: 50px;
     }
     .dance{
         display: flex;
         flex-direction: column;
     }
-    .reverse{
-        display: flex;
-        flex-direction: column;
+    .dance .content{
+        text-align: center;
+        margin: auto;
+        width: 100%
+    };
+    .content p{
+        margin-top: 25px;
     }
-}
+    .content button {
+        margin-top: 35px;
+        margin-bottom: 50px;
+    }
+    .dance .image{
+        width: 100%;
+    }
+    /* Statistic */
+    .sta_content{text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .sta_content .number {
+        margin-top: 0;
+    }
+    /* Footer */
+    .footer_ h2.title {
+        text-align: start;
+    }
+    }
 @media  (max-width:768px) {
-    a.icon-menu{
-        display: block;
+    h2.title {
+        font-size: 25px;
+        text-align: center;
     }
-    .header{
+    p {
+        font-size: 15px;
+    }
+    /* Header */ 
+    .header {
         position: relative;
         justify-content: space-between;
+        }
+    a.icon-menu{
+        display: block;
     }
     ul.list-items{
         display: flex;
@@ -531,6 +469,7 @@ a.icon{
         right: -65%;
         left:70%;
         align-items: start;
+        display: none;
     }
     ul li a {
         text-decoration: none;
@@ -543,90 +482,132 @@ a.icon{
     ul li{
         width: 100%;
     }
-     ul.list-items li:hover {
-        
+    ul.list-items li:hover {    
         background-color: rgb(0, 0, 0);
     }
-    .p-banner{
-        font-size: 20px;
-        margin-top: 40px;
+    /* Banner */
+    .banner .text{
+        max-width: 100%;
+    }
+    .banner h2 {
+        font-size: 30px;
+        text-align: center;
+        
+    }
+    .banner p {
+        text-align: center;
     }
     .register{
         width: 280px;
         height: 50px;
         margin-top: 30px;
-    
+        margin: auto;
     }
     
-    .h1-banner {
-        font-size: 60px;
+    /* Main */ 
+    .card p { 
+        font-size: 15px;
+        max-width: 90%;
+        margin: auto;
     }
-    .list-card{
-        flex-direction: column;
-        padding:  35px;
-        
+    .main .list-card {
+        flex-direction: column;        
     }
-    .card{
-        width: 70%;
+    .main .main-text {
+        padding-top: 30px;
+    }
+    .list-card {
+        margin-top: 0;
+        padding-bottom: 30px;
+
+    }
+    .list-card .card {
+        width: 90%;
         margin: auto;
         margin-top: 30px;
     }
-    .h1-card{
-        font-size: 30px;
-    }
-    .card p{
-        font-size: 15px;
-        word-wrap: break-word;
-    }
-    .dance{
+    /* Dance */
+    .dance {
         display: flex;
         flex-direction: column;
     }
-    .reverse{
-        display: flex;
-        flex-direction: column;
+    .dance h2 {
+
+        margin-top: 50px;
+        text-align: center;
     }
-    .content h1{
-        font-size: 50px;
-        font-weight: 500px;
-        margin-top: 100px;
-    }
-    .content p{
+    .dance p{
         margin-top: 25px;
     }
     .content button {
         margin-top: 35px;
-        margin-bottom: 25px;
+        margin-bottom: 50px;
     }
-    .image{
+    .dance .image{
         width: 100%;
     }
-    .content{
+    .dance .content{
         text-align: center;
         margin: auto;
         width: 100%
     }
-    .number{
+    /* Statistic */ 
+    .sta_content{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }  
+    .sta_content .number {
         flex-direction: column;
         justify-self: center;
         margin-top: 50px;
     }
-    .sta_content{
-        padding-bottom: 50px;
-    }  
-    .footer_{
+    /* Subcribe */
+    .input-sub .submit {
+        width: 30%;    
+        margin-right: 37px;
+    }
+    .subscribe{
+        height: auto;
+        padding-bottom: 25px;
+    }
+    .subscribe .subscribe-content{
+        padding-top: 0;
+    }
+    /* Footer */
+    .footer_ {
         flex-direction: column;
-
     }
-    .left,.right{
-        width: 100%;
+    .right h2, .left h2 {
+        text-align: center;
+        margin-bottom: 0;
     }
-    .left{
+    .footer_ .left {
         text-align: center;
         margin: auto;
+        margin-top: 50px;
+        width: 100%;
     }
-    .right{
+    .footer_ .right{
         flex-direction: column;
         text-align: center;
+        margin-top: 50px;
+        width: 100%;
     }
-}
+
+    }
+/* End Responsive*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
